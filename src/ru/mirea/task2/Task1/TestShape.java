@@ -1,7 +1,7 @@
 package ru.mirea.task2.Task1;
 
 public class TestShape {
-    public static void main(String []args) {
+    public static void main(String[] args) {
         Shape shape = new Shape("Triangle");
         System.out.println(shape.toString());
         Shape shape2 = new Shape("Square");

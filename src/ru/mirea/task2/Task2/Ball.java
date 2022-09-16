@@ -2,6 +2,7 @@ package ru.mirea.task2.Task2;
 
 public class Ball {
     private String color, size;
+
     public Ball(String color, String size) {
         this.color = color;
         this.size = size;
@@ -24,6 +25,6 @@ public class Ball {
     }
 
     public String toString() {
-        return "Ball: Size: " + getSize() + ", Color: "+ getColor();
+        return "Ball: Size: " + getSize() + ", Color: " + getColor();
     }
 }

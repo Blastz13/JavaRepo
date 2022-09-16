@@ -6,13 +6,12 @@ public class Book {
 
     public Book() {
         title = "Default Title Book";
-        author="No Name";
-        publishYear=0;
-        pages=0;
+        author = "No Name";
+        publishYear = 0;
+        pages = 0;
     }
 
-    public Book(String title, String author, int publishYear, int pages)
-    {
+    public Book(String title, String author, int publishYear, int pages) {
         this.title = title;
         this.author = author;
         this.publishYear = publishYear;

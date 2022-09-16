@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class TestDog {
     ArrayList<Dog> list_dogs = new ArrayList<Dog>(0);
 
-    public void addDogs(){
+    public void addDogs() {
         String name;
         int age, count_dogs;
         Scanner scanner = new Scanner(System.in);
@@ -17,15 +17,15 @@ public class TestDog {
         count_dogs = scanner.nextInt();
 
         System.out.println("Input name and age: ");
-        for(int i = 0; i < count_dogs; i++){
+        for (int i = 0; i < count_dogs; i++) {
             name = scanner.next();
             age = scanner.nextInt();
-            list_dogs.add(new Dog(name,age));
+            list_dogs.add(new Dog(name, age));
         }
     }
 
-    public void showDogs(){
-        for (Dog dog: list_dogs) {
+    public void showDogs() {
+        for (Dog dog : list_dogs) {
             System.out.println(dog.toString());
         }
     }

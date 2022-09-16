@@ -7,27 +7,27 @@ public class Hand {
         return numOfFingers;
     }
 
-    public Hand(){
-        numOfFingers=5;
+    public Hand() {
+        numOfFingers = 5;
     }
 
-    public Hand(int n){
-        numOfFingers=n;
+    public Hand(int n) {
+        numOfFingers = n;
     }
 
     public void setNumOfFingers(int numOfFingers) {
         this.numOfFingers = numOfFingers;
     }
 
-    public void wave(){
+    public void wave() {
         System.out.println("*waving hand*");
     }
 
-    public void clap(){
+    public void clap() {
         System.out.println("*clap*");
     }
 
-    public void info(){
-        System.out.println("This hand has "+numOfFingers+" fingers");
+    public void info() {
+        System.out.println("This hand has " + numOfFingers + " fingers");
     }
 }

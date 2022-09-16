@@ -34,8 +34,7 @@ public class Book {
         this.countPage = rate;
     }
 
-    public String toString()
-    {
+    public String toString() {
         return "Book: " + getName() + " Author: " + getAuthor() + ", Count Page: " + getCountPage();
     }
 }

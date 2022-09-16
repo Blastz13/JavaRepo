@@ -9,11 +9,12 @@ public class Factorial {
         System.out.print("Введите число: ");
         long number = input.nextInt();
 
-        if(number > 0)
+        if (number > 0)
             System.out.println(getFactorial(number));
         else
             System.out.println("Ошибка, число должно быть больше 0");
     }
+
     public static BigInteger getFactorial(long f) {
         BigInteger result = BigInteger.ONE;
         for (int i = 1; i <= f; i++)
