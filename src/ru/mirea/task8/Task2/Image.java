@@ -17,6 +17,6 @@ public class Image extends JFrame {
     }
 
     public static void main(String[] args) throws IOException {
-        new Image(args.length != 0 ? args[0] : "src/ru/mirea/task8/Task2/img.jpeg").setVisible(true);
+        new Image("src/ru/mirea/task8/Task2/img.jpeg").setVisible(true);
     }
 }

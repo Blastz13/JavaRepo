@@ -10,9 +10,9 @@ class UserGUI extends JFrame {
     JButton buttonMadrid = new JButton("Real Madrid");
     JButton buttonFinish = new JButton("Finish");
 
-    private int milan = 0, madrid = 0;
+    private int score_milan = 0, score_madrid = 0;
 
-    JLabel result = new JLabel("Result: " + milan + " X " + madrid);
+    JLabel result = new JLabel("Result: " + score_milan + " X " + score_madrid);
     JLabel lastScore = new JLabel("Last Scorer: N/A");
     JLabel winner = new JLabel("Winner: DRAW");
 
@@ -45,8 +45,8 @@ class UserGUI extends JFrame {
 
         buttonMilan.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
-                milan++;
-                result.setText("Result: " + milan + " X " + madrid);
+                score_milan++;
+                result.setText("Result: " + score_milan + " X " + score_madrid);
                 lastScore.setText("Last Scorer: AC Milan");
             }
         });
@@ -54,8 +54,8 @@ class UserGUI extends JFrame {
         buttonMadrid.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                madrid++;
-                result.setText("Result: " + milan + " X " + madrid);
+                score_madrid++;
+                result.setText("Result: " + score_milan + " X " + score_madrid);
                 lastScore.setText("Last Scorer: Real Madrid");
             }
         });
@@ -64,9 +64,9 @@ class UserGUI extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 flowButton.setVisible(false);
-                if (madrid > milan) {
+                if (score_madrid > score_milan) {
                     winner.setText("Winner: Real Madrid");
-                } else if (madrid == milan) {
+                } else if (score_madrid == score_milan) {
                     winner.setText("Winner: DRAW");
                 } else {
                     winner.setText("Winner: AC Milan");

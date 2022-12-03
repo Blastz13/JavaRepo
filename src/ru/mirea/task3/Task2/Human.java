@@ -46,7 +46,7 @@ public class Human {
         human.waveHand();
         String haircolor, haircut, eyecolor;
         int fingers, legsize;
-        System.out.println("Enter hair color, hair style, eye color, shoe size, humber of fingers on 1 hand");
+        System.out.println("Input hair color, hair style, eye color, shoe size, humber of fingers on 1 hand");
         haircolor = in.next();
         haircut = in.next();
         eyecolor = in.next();

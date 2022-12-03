@@ -25,7 +25,6 @@ public class MouseControl extends JFrame {
         window.add(centerText, BorderLayout.CENTER);
 
 
-
         eastText.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
